@@ -11,6 +11,9 @@ elif operacao == '-':
 elif operacao == '*':
     print(num1 * num2)
 elif operacao == '/':
-    print(num1 / num2)
+    if num2 != 0:
+        print(num1 / num2)
+    else:
+        print("Erro: Não é possível dividir por zero!")
 else:
     print("Operação Inválida")
